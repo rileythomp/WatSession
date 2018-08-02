@@ -1,4 +1,4 @@
-#infoSessionSearch
+WatSession
 
 Info Session search allows you to search University of Waterloo info sessions by company, free food, time, building etc.
 
