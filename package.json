@@ -1,7 +1,7 @@
 {
   "name": "watsession",
   "version": "1.0.0",
-  "description": "testing node.js and express",
+  "description": "Find and set reminders for University of Waterloo employer info sessions.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
