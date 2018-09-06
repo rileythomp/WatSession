@@ -1,0 +1,110 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Alegreya Sans';
+    background-image: linear-gradient(gold, darkGrey);
+    background-repeat: no-repeat;
+    background-color: darkGrey;
+}
+
+html body.vex-open {
+    overflow: auto
+}
+
+p, ul {
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-family: 'Alegreya Sans SC';
+    margin-bottom: 0.3em;
+}
+
+.centered {
+    text-align: center;
+}
+
+#terms, #company, #searchButton, .reminder, .intervalDate {
+    font-family: 'Alegreya Sans';
+    font-size: 1.1em;
+    border-radius: 0.3em;
+    border: none;
+    padding: 0.5em;
+}
+
+#terms {
+    height: 2.1em;
+    width: 31rem;
+}
+
+#company {
+    width: 13.8rem;
+}
+
+#searchButton {
+    width: 14.8rem;
+}
+
+.mapUrl, .mapUrl:visited {
+    text-decoration: none; 
+    color: black;
+}
+
+#noResultsDisplay {
+    text-align: center;
+}
+
+#infoDisplay {
+    margin: 0 1rem 1rem 1rem;
+}
+
+#audience {
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+#companyReminder {
+    margin-top: 1rem;
+}
+
+.sessionToday {
+    border-bottom: 1px dotted black;
+}
+
+.intervalDate {
+    width: 6rem;
+}
+
+.topSpacing {
+    margin-top: 0.5rem;
+}
+
+.infoSessionTable td {
+    padding: 0.5rem 3rem 0.5rem 0;
+    border-bottom: 1px black dotted;
+    width: 15%
+}
+
+.infoSessionTable td:nth-child(n+4) {
+    text-align: center;
+}
+
+#infoSessionToday {
+    margin-bottom: 0.5rem;
+}
+
+.infoSessionTable {
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+.horizSpace {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
