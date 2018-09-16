@@ -1,10 +1,10 @@
 WatSession
 
-Info Session search allows you to search University of Waterloo info sessions by company, free food, time, building etc.
+Search for University of Waterloo employer info sessions by employer and date. Set email reminders for info sessions of interest. 
 
-Created with HTML, CSS, Javascript and jQuery. 
+Front-end done with AngularJS, HTML and CSS, back-end done with Node.js and Express.
 
-Data comes from https://uwaterloo.ca/api/
+Info session data from https://uwaterloo.ca/api/
 
 Deployed with Heroku.
 
