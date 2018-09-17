@@ -8,5 +8,25 @@
     "start": "node server.js"
   },
   "author": "Riley Thompson",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cron": "^1.4.1",
+    "express": "^4.16.3",
+    "moment": "^2.22.2",
+    "node4mailer": "^4.0.3",
+    "uwaterloo-api": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rileythomp/WatSession.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rileythomp/WatSession/issues"
+  },
+  "homepage": "https://github.com/rileythomp/WatSession#readme",
+  "engines": {
+    "node": "8.9.4"
+  }
 }
