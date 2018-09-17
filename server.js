@@ -14,6 +14,8 @@ var uwclient = new uwaterlooApi({
   API_KEY : 'd55d4614484986ea90da927aa3ad33b1 '
 });
 
+const port = process.env.PORT
+
 app.use(express.static(__dirname + '/public'));
 
 app.use(bodyParser.json());
@@ -129,6 +131,6 @@ app.post('/sendreminder', function (req, res) {
   job.start();
 })
 
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log('Server listening on port 3000');
 });
