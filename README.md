@@ -8,6 +8,8 @@ Info session data from https://uwaterloo.ca/api/
 
 Deployed with Heroku.
 
+https://watsession.herokuapp.com
+
 TODO:
 * Ensure email entered is in email address form.
 * Make distinction between company and date range search more clear.
