@@ -59,7 +59,8 @@ h1 {
 }
 
 #infoDisplay {
-    margin: 0 1rem 1rem 1rem;
+    margin: 1rem auto;
+    width: 50%;
 }
 
 #audience {
@@ -107,4 +108,9 @@ ul {
 .horizSpace {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+
+.fa-spinner {
+    margin: 6rem 50%;
+    display: none;
 }

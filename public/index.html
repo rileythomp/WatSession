@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="vex/vex.combined.min.js"></script>
     <script>vex.defaultOptions.className = 'vex-theme-os'</script>
     <script src="pickadate/picker.js"></script>
@@ -41,6 +42,9 @@
     <div ng-if="noResults" id="noResultsDisplay">
         <p>{{noResultsMsg}}</p>
     </div>
+    <div>
+        <p><i class="centered fa fa-spinner fa-spin"></i></p>
+    </div>
     <div ng-if="showToday">
         <p class="centered" ng-if="noSessionsToday">There are no info sessions today</p>
         <p id="infoSessionToday" class="centered" ng-if="sessionsToday">Today's info sessions</p>
@@ -55,7 +59,6 @@
         </table>
     </div>
     <div ng-if="showInfo" id="infoDisplay">
-        <button ng-click="openVex()" id="companyReminder" class="reminder">Set Reminder</button>
         <p>Company: {{company}}</p>
         <p>Description: {{description}}</p>
         <p>Date: {{day}}, {{date}}</p>
@@ -63,10 +66,11 @@
         <p><a target="blank" class="mapUrl" style="text-decoration: none; text-decoration-color: black;" href={{mapLink}}>Building: {{location}}</a></p>
         <p><a target="blank" href={{companySite}}>Company site</a></p>
         <p><a target="blank" href={{moreInfo}}>More info</a></p>
-        <p id="audience" >Audience:</p>
+        <p id="audience" >Audience:</p>        
         <ul>
             <li ng-repeat="group in audience">{{group}}</li>
         </ul>
+        <button ng-click="openVex()" id="companyReminder" class="reminder">Set Reminder</button>
     </div>
     <div ng-if="showIntervals" id="intervalDisplay">
         <p class="centered" ng-if="noSessions">There are no info sessions during this period</p>

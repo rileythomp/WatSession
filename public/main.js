@@ -82,6 +82,7 @@ app.controller('appCtrlr', function($scope, $http) {
                 $scope.showIntervals = false;
                 $scope.showInfo = true
             }
+            $('.fa-spinner').hide()
         })
     }
 
@@ -113,6 +114,7 @@ app.controller('appCtrlr', function($scope, $http) {
                 $scope.showInfo = false
                 $scope.showIntervals = true;
             }
+            $('.fa-spinner').hide()
         })
     }
 
@@ -128,6 +130,7 @@ app.controller('appCtrlr', function($scope, $http) {
     $scope.enterSearch = function (e) {
         if (e.which == 13) {
             if ($scope.searchedTerm && $scope.searchedCompany) {
+                $('.fa-spinner').show()
                 companyPost($scope.searchedTerm, $scope.searchedCompany)
             } else {
                 $scope.noResultsMsg = 'Please specify both a term and company'
@@ -137,6 +140,7 @@ app.controller('appCtrlr', function($scope, $http) {
     }
     $scope.companySearch = function () {
         if ($scope.searchedTerm && $scope.searchedCompany) {
+            $('.fa-spinner').show()
             companyPost($scope.searchedTerm, $scope.searchedCompany)
         } else {
             $scope.noResultsMsg = 'Please specify both a term and company'
@@ -146,6 +150,7 @@ app.controller('appCtrlr', function($scope, $http) {
 
     $scope.intervalSearch = function () {
         if ($scope.searchedTerm && $('#intervalStart').val() && $('#intervalEnd').val()) {
+            $('.fa-spinner').show()
             intervalPost($scope.searchedTerm, moment($('#intervalStart').val()), moment($('#intervalEnd').val()))
         } else {
             $scope.noResultsMsg = 'Please specify both a term and a date range'
