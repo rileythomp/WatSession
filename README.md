@@ -1,4 +1,4 @@
-WatSession
+# WatSession
 
 Search for University of Waterloo employer info sessions by employer and date. Set email reminders for info sessions of interest. 
 
