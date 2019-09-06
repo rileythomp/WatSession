@@ -26,7 +26,13 @@ let formatTime = function (start, end) {
     return newStart + startHalf + ' - '  + newEnd + endHalf
 }
 
+let codeToTermMap = {
+    1199: "Fall 2019",
+    1201: "Winter 2020"
+}
+
 module.exports = {
     companiesMatch: companiesMatch,
-    formatTime: formatTime
+    formatTime: formatTime,
+    codeToTermMap: codeToTermMap
 }

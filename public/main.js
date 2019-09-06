@@ -25,8 +25,8 @@ app.controller('appCtrlr', function($scope, $http) {
     $('.intervalDate').pickadate({ format: 'mmm d, yyyy' })
 	var startPicker = $('#intervalStart').pickadate('picker')
     var endPicker = $('#intervalEnd').pickadate('picker')
-    startPicker.set({min: [2018,8,7], max: [2019,3,27]})
-    endPicker.set({min: [2018,8,7], max: [2019,3,27]})
+    // startPicker.set({min: [2019,8,4], max: [2020,3,30]})
+    // endPicker.set({min: [2019,8,4], max: [2020,3,30]})
     
     var infosession = {}
 

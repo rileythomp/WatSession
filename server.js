@@ -4,11 +4,12 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var uwaterlooApi = require('uwaterloo-api'); 
-var companiesMatch = require('./helpers').companiesMatch
 var moment = require('moment');
 var CronJob = require('cron').CronJob;
 var node4mailer = require('node4mailer')
 var formatTime = require('./helpers').formatTime
+var codeToTermMap = require('./helpers').codeToTermMap
+var companiesMatch = require('./helpers').companiesMatch
 
 var uwclient = new uwaterlooApi({
   API_KEY : 'd55d4614484986ea90da927aa3ad33b1 '
@@ -22,7 +23,7 @@ app.use(bodyParser.json());
 
 app.post('/todayssessions', function (req, res) {
   uwclient.get('/terms/{term}/infosessions', {
-    term: 1189,
+    term: 1191,
     }, 
     function(err, data) {
       var infosessions = data.data
@@ -61,7 +62,7 @@ app.post('/companysession', function(req, res) {
           return
         }
       }
-      var empty = `${search.company} has no info sessions in the ${search.term == 1189 ? 'Fall 2018' : 'Winter 2019'} term`
+      var empty = `${search.company} has no info sessions in the ${codeToTermMap[search.term]} term`
       res.send({empty: empty})
     })
 });
