@@ -1,6 +1,6 @@
 # WatSession
 
-Deployed with Heroku at https://watsession.herokuapp.com
+https://watsession.herokuapp.com
 
 Interval search                    |  Company search
 :-------------------------:|:-------------------------:
@@ -8,7 +8,11 @@ Interval search                    |  Company search
 
 Search for University of Waterloo employer info sessions by employer and date. Set email reminders for info sessions of interest. 
 
-Front-end done with AngularJS, HTML and CSS, back-end done with Node.js and Express.
+Built with:
+ * Javascript, Node, Express for the backend
+ * Javascript, AngularJS, HTML/CSS for the frontend
+ * The University of Waterloo Open Data API (https://uwaterloo.ca/api/) to retrieve raw info session data
+
 
 To run locally:
 
@@ -21,6 +25,3 @@ To run locally:
 ```$ npm start```
 
 Then go to localhost:3000
-
-Info session data from https://uwaterloo.ca/api/
-
