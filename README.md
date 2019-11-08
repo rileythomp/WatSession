@@ -25,4 +25,4 @@ To run locally:
 
 ```$ npm start```
 
-Then go to localhost:3000
+Then go to localhost:3000.
