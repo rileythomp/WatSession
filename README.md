@@ -12,6 +12,7 @@ Built with:
  * Javascript, Node, Express for the backend
  * Javascript, AngularJS, HTML/CSS for the frontend
  * The University of Waterloo Open Data API (https://uwaterloo.ca/api/) to retrieve raw info session data
+ * Deployed with Heroku
 
 
 To run locally:
