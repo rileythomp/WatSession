@@ -114,3 +114,11 @@ ul {
     margin: 6rem 50%;
     display: none;
 }
+
+#github-link {
+    position: fixed;
+    bottom: 0.5em;
+    right: 1em;
+    color: inherit;
+    font-size: 2.5em;
+}
