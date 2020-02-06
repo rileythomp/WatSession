@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 
 app.post('/todayssessions', function (req, res) {
   uwclient.get('/terms/{term}/infosessions', {
-    term: 1191,
+    term: 1201,
     }, 
     function(err, data) {
       var infosessions = data.data
